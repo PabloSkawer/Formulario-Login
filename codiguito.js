@@ -118,16 +118,27 @@ function validar(e){
 document.getElementById("enviar2").addEventListener("click", conectarse);
 
 function conectarse(){
+    var c1=document.getElementById("email2").value;
+    var c2=document.getElementById("email").value;
     var p1 = document.getElementById("Contraseña").value;
     var p2=document.getElementById("ContLog").value;
-    if (p1==p2){
+    if (c1==c2&&p1==p2){
         document.getElementById("final").style.display="block";
         document.getElementById("registrarse").style.display="none";
         document.getElementById("inicial").style.display="none";
         document.getElementById("logearse").style.display="none";
     }
-    else {
+
+    else if (c1==c2&&p1!=p2) {
         document.getElementById("p").innerHTML="Contraseña erronea";
+        return false;
+    }
+    else if (c1!=c2&&p1==p2) {
+        document.getElementById("p").innerHTML="Email erroneo";
+        return false;
+    }
+    else {
+        document.getElementById("p").innerHTML="Email y contraseña erroneos";
         return false;
     }
 
