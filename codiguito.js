@@ -114,6 +114,45 @@ function validar(e){
     }
     
 }
+function validarMailito(){
+    var correo=document.getElementById("email2").value;
+    var expresion=/\w+@\w+\.+[a-z]/;
+    var expresion2= /^[9|6]{1}([\d]{2}[-]*){3}[\d]{2}$/;
+    
+    if(expresion.test(correo)||expresion2.test(correo)){
+          setCookie("Correo",correo,1);
+        return true;
+    }
+    
+    document.getElementById("p").innerHTML="Email no valido";
+    return false;
+}
+function validarPassito(){
+    var p1 = document.getElementById("ContLog").value;
+    var expresion=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/;
+    
+    if(!expresion.test(p1)){
+        document.getElementById("p").innerHTML="Contraseña no valida";
+        return false;
+    }
+        setCookie("Contraseña",p1,1);
+        return true;
+    
+}
+
+function conectar(){
+    if(validarMailito() && validarPassito()){
+        document.getElementById("final").style.display="block";
+        document.getElementById("registrarse").style.display="none";
+        document.getElementById("inicial").style.display="none";
+        document.getElementById("logearse").style.display="none";
+        return true;
+}
+else{
+    document.getElementById("p").innerHTML="Email o contraseña no validos";
+    return false;
+}
+}
 
 document.getElementById("enviar2").addEventListener("click", conectarse);
 
@@ -207,10 +246,5 @@ function setCookie(cname, cvalue, exdays) {
       return document.cookie = cname + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   }
 
-  function volverLog(){
-    document.getElementById("final").style.display="none";
-    document.getElementById("registrarse").style.display="none";
-    document.getElementById("inicial").style.display="none";
-    document.getElementById("logearse").style.display="block";
-  }
+
   

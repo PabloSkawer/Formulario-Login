@@ -27,12 +27,13 @@
 <div id="logearse">
     <div class="fondito">
         <p id="p"></p>
-    <form onsubmit="conectarse(); return false">
+    <form>
         <br>
-        <label for="Email">Email: </label><br><input type="text" id="email2" name="email2"><br><br>
-        <label for="ContLog">Contraseña: </label><br><input type="password" id="ContLog" name="ContLog"><br><br>
-        <input type="button" name="mostrar" id="mostrar" class="mostrar" value="Mostrar contraseña" onclick="mostrarContra()"><br><br>
-        <input type="submit" value="Enviar" id="enviar2">
+        <label for="Email">Email o numero: </label><br><input type="text" id="email2" name="email2" required><br><br>
+        <label for="ContLog">Contraseña: </label><br><input type="password" id="ContLog" name="ContLog" required><br><br>
+        <input type="button" name="mostrar" id="mostrar" class="mostrar" value="Mostrar contraseña" onclick="mostrarContra()"><br><br><br>
+        <input type="submit" value="Enviar post resgistro" id="enviar2" onclick="conectarse(); return false">
+        <input type="submit" value="Enviar sin registro" id="enviar3" onclick="conectar(); return false"><br><br><br>
         <input type="reset" value="Borrar"><br><br><br>
         
     </form>
