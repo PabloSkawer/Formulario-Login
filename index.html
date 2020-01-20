@@ -12,21 +12,21 @@
 <body>
     <center>
         <div class="saludo"><h1>Buenos dias:</h1></div>
-    <div id="inicial">
         <div class="fondito">
-    
-        
+    <div id="inicial">
     <h2>Logearse</h2><input type="button" value="Log In" class="Login" id="logear">
     
     <h2>Registrarse</h2><input type="button" value="Registrarse" class="signin" id="alta">
 <br>
 <br>
 </div>
-</div>
 
+<p id="p"></p>
 <div id="logearse">
-    <div class="fondito">
-        <p id="p"></p>
+   
+        
+        <p id="d"></p>
+        
     <form>
         <br>
         <label for="Email">Email o numero: </label><br><input type="text" id="email2" name="email2" required><br><br>
@@ -39,20 +39,19 @@
     </form>
     <a href="index.html">Volver</a>
     <br><br>
-</div>
+
 </div>
 <div id="registrarse"> 
-    <div class="fondito">
-    <p id="p"></p>
+    
     <form onsubmit="validar(); return false">
         <br>
         <label for="Nombre">Nombre:* </label><br><input type="text" name="Nombre" id="Nombre" required><br><br>
         <label for="Apellido">Apellido:* </label><br><input type="text" name="Apellido" id="Apellido" required><br><br>
         <label for="email">Email o numero:*</label><br><input type="text" name="email" id="email" required><br><br>
-        <label for="Contraseña">Contraseña:* </label><br><input type="password" name="Contraseña" id="Contraseña"required><br><br>
-        <label for="Repetir">Repetir Contraseña:* </label><br><input type="password" name="Repetir" id="Repetir"required><br><br>
+        <label for="Contraseña">Contraseña:* </label><br><input type="password"  id="contraseña" required><br><br>
+        <label for="Repetir">Repetir Contraseña:* </label><br><input type="password"  id="repetir" required><br><br>
         <label for="Nacimiento">Fecha de nacimiento: </label><br><input type="date" name="Nacimiento" id="Nacimiento"><br><br>
-        <input type="submit" value="Enviar" name="Enviar" id="enviar1">
+        <input type="button" value="Enviar" name="Enviar" id="enviar1">
         <input type="reset" value="Borrar" name="Borrar"><br><br><br>
         <br>
         <label class="obli">* campos obligatorios</label>
@@ -60,16 +59,13 @@
     <br>
     <a href="index.html">Volver</a>
     <br><br>
-</div>
+
 </div>
 <div id="final">
-    <div class="fondito">
     <h1>Bienvenido a tu pagina, estamos creando cookies</h1>
     <br>
     <a href="index.html" onclick="desconectar()">Desconectarse</a>
     <br><br>
-
-</div>
 </div>
 </center>
 </body>

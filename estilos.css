@@ -30,6 +30,7 @@ a :hover{
 }
 #p{
     background-color: red;
+    z-index: 15;
 }
 .fondito{
     background-color: rgb(233, 225, 225);
@@ -47,4 +48,7 @@ label{
 }
 .obli{
     font-size: 1.2vw;
+}
+#d{
+    background-color: green;
 }
