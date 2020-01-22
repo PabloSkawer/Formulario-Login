@@ -93,19 +93,6 @@ function validar(e){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function validarMailito(){
     var correo=document.getElementById("email2").value;
     var expresion=/\w+@\w+\.+[a-z]/;
@@ -187,14 +174,14 @@ function desconectar(){
     
     deleteCookie("Correo");
     deleteCookie("Contraseña");
-    document.getElementById("f1").reset();
+    /*document.getElementById("f1").reset();
     document.getElementById("f2").reset();
     document.getElementById("f3").reset();
     document.getElementById("log").style.display="block";
     document.getElementById("conect").style.display="none";
     document.getElementById("c").innerHTML="Se ha desconectado con éxito";
     document.getElementById("c").className="confirm";
-    document.getElementById("mensajeError").style.display="none";
+    document.getElementById("mensajeError").style.display="none";*/
     
 }
 
