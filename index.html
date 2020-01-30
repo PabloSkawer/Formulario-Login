@@ -10,7 +10,10 @@
 
 
 <body>
+    
     <center>
+        
+        <div class="comprobar"></div>
         <div class="saludo"><h1>Buenos dias:</h1></div>
         <div class="fondito">
     <div id="inicial">
@@ -43,7 +46,7 @@
 </div>
 <div id="registrarse"> 
     
-    <form onsubmit="validar(); return false">
+    <form>
         <br>
         <label for="Nombre">Nombre:* </label><br><input type="text" name="Nombre" id="Nombre" required><br><br>
         <label for="Apellido">Apellido:* </label><br><input type="text" name="Apellido" id="Apellido" required><br><br>
@@ -64,7 +67,7 @@
 <div id="final">
     <h1>Bienvenido a tu pagina, estamos creando cookies</h1>
     <br>
-    <a href="index.html" onclick="desconectar()">Desconectarse</a>
+    <a href="index.html" id="paradesconectarse">Desconectarse</a>
     <br><br>
 </div>
 </center>

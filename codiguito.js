@@ -1,3 +1,20 @@
+
+function existencia(){
+if (getCookie()){
+    document.getElementById("final").style.display="block";
+    document.getElementById("registrarse").style.display="none";
+    document.getElementById("logearse").style.display="none";
+    document.getElementById("inicial").style.display="none";
+}
+else {
+    return false;
+}
+}
+
+
+
+
+
 function mostrarContra(){
     var mostrar = document.getElementById("ContLog");
 
@@ -168,7 +185,7 @@ function conectarse(){
 
 }
 
-
+document.getElementById("paradesconectarse").addEventListener("click",desconectar)
 
 function desconectar(){
     
