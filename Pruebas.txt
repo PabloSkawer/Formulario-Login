@@ -1,0 +1,21 @@
+Pantalla Login:
+
+Sin registro
+Entrar un email valido (con la morfologia email) o un numero de telefono que comience por 6,7 o 9 Prueba: deschouwer.pablo@gmail.com
+Entrar una contraseña correcta (minimo 8 caracteres con 1Mayuscula, 1numero y 1simbolo) Prueba: Mememe1@
+Si no son validos apareceran los errores en funcion de input no se adecue a las especificaciones
+
+Pantalla Registro
+Nombre obligatorio (required)
+Apellido Obligatorio (required)
+Email o numero (formato email o num de 9 caracteres empezando por 6,7 u 8) prueba deschouwer.pablo@gmail.com
+contraseña valida (8 caracteres con 1 simbolo, 1 mayuscula y 1 numero) prueba Mememe1
+Repetir contraseña prueba Mememe1
+Fecha de nacimiento opcional
+
+Con registro
+Entrar un email valido (debe de ser el mismo email o numero de telefono entrado durante el registo)
+Entrar una contraseña valida (debe de ser la misma que en el registro)
+Si ambos 2 no coinciden aparecera el error (email erroneo, num erróneo o ambos erroneos)
+
+
